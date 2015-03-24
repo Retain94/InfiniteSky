@@ -126,6 +126,9 @@ WorldPC.Set(0x09, {
 				ZoneID: -1,
 				Unknown2: -1
 			})));
+                        WorldPC.MessagePacket = restruct.
+                int8lu('PacketID').
+string('Message', 51).
 		}
 	}
 });
