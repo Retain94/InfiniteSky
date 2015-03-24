@@ -12,9 +12,8 @@ GMCommands.AddCommand(new Command('b', 0, function command_giveexp(string, clien
 	}
 
 	world.sendToAll(new Buffer(
-		packets.ChatPacketReply.pack({
-			PacketID: 0x2A,
-			Name: client.character.Name,
-			Message: string
+                WorldPC.MessagePacket.pack({
+                PacketID: 0x52,
+                Message: string
 		})));
 }));
